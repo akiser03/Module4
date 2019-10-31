@@ -1,0 +1,70 @@
+#d{
+    background-color: #000000;
+}
+        .title{
+            background: linear-gradient(#49708f, #293f50);
+            text-align: center;
+        }
+        
+        .backpic{
+            position: absolute;
+            width: 410px;
+            height: 410px;
+            margin-top: 20px;
+            background-color: rgba(220, 20, 60, 0.88);
+        }
+        .pic{
+            position: absolute;
+            width: 400px;
+            padding-top: 25px;
+            padding-left: 20px;           
+        }
+        .exp{
+            position: absolute;
+            width: 400px;
+            margin-left: 525px;
+            text-align: center;
+            background-color: rgba(220, 20, 60, 0.88);
+            margin-top: 20px;
+            
+        }
+#foo{
+    position: absolute;
+    margin-left: 300px;
+}
+#info{
+    visibility: hidden;
+}
+        .divp{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .future{
+            position: absolute;
+            width: 400px;
+            margin-left: 700px;
+            margin-top: 255px;
+            
+            background-color: rgba(220, 20, 60, 0.88);
+            text-align: center;
+        }
+        .otherp{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+.logo{
+    position: absolute;
+    margin-left: 70%;
+}
+#animate{
+    position: absolute;
+    width: 100px;
+}
+#hanes{
+    position: absolute;
+    margin-top: 20px;
+}
+#fb{
+    position: absolute;
+    margin-top: 20px;
+}
