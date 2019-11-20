@@ -1,27 +1,41 @@
+    (function(){
+    $('.carousel').carousel({
+  interval: 2000
+})
+    });
+
 $(document).ready(function(){
-    $("#dark").click(function(){
-    $("#d").css("backgroundColor","#ffffff");
-    });
-    
-    $("#light").click(function(){
-    $("#d").css("backgroundColor","#000000");
-    });
-    
-    $("#foo").click(function(){
-       $("#fade").fadeOut("slow"); 
-    });
-    
-    $(".title").mouseenter(function(){
-      $("div#info").css("visibility","visible");
-       alert("Click me to display my information!");
-   });
-    
-    $("#animate").click(function(){
-    $("#hanes").animate({
-      right: '500px',
-      opacity: '0',
-      height: '100px',
-      width: '100px'
-    },"slow");
+    $('[data-toggle="popover"]').popover({
+        container: 'body',
+        placement : 'left',
+        trigger : 'hover'
     });
 });
+    
+(function() {
+  var darkSwitch = document.getElementById("darkSwitch");
+  if (darkSwitch) {
+    initTheme();
+    darkSwitch.addEventListener("change", function(event) {
+      resetTheme();
+    });
+    function initTheme() {
+      var darkThemeSelected =
+        localStorage.getItem("darkSwitch") !== null &&
+        localStorage.getItem("darkSwitch") === "dark";
+      darkSwitch.checked = darkThemeSelected;
+      darkThemeSelected
+        ? document.body.setAttribute("data-theme", "dark")
+        : document.body.removeAttribute("data-theme");
+    }
+    function resetTheme() {
+      if (darkSwitch.checked) {
+        document.body.setAttribute("data-theme", "dark");
+        localStorage.setItem("darkSwitch", "dark");
+      } else {
+        document.body.removeAttribute("data-theme");
+        localStorage.removeItem("darkSwitch");
+      }
+    }
+  }
+})();

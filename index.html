@@ -1,35 +1,64 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>About Me</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-</head>
-<body id="d">
-    <div class="title">
-        <h1>About Adam Kiser</h1>
-    </div>
-    <button id="dark" class="toggle">Dark Mode Off</button>
-    <button id="light" class="toggle">Dark Mode On</button>
-    <div class="backpic">
-        <img class="pic" src="https://res.cloudinary.com/dzmjous4n/image/upload/v1569453182/66756326_695406667585068_935746629313495040_n.jpg.jpg">
-        <img class="pic" id="fade" src="https://res.cloudinary.com/dzmjous4n/image/upload/v1567639362/Pic1.jpg" alt="ERROR">
-        <button id="foo">See More</button>
-    </div>
-    
-    <div class="exp" id="info">
-        <h3>Experience and Goals</h3>
-        <p class="divp">My experience with web design includes creating custom pages using html, CSS, and a little javascript.  I enjoy working with CSS and html, however I do hope to learn more about javascript in this course.  I would also like to learn more advanced features for website design.</p>
-    </div>
-    <div class="future" id="info">
-        <h3>Future?</h3>
-        <p class="otherp">Looking into the future I think I would like to work with a development team to design websites for clients.  I currently work at Hanes Brands Inc. so there could be an opportunity for me to move up and work on our sites within my current workplace.  I enjoy working with html and css, so I know it's something I would enjoy doing as a career. My dream would be to work for the Facebook design team!</p>
-    </div>
-    <div class="logo">
-    <button id="animate">See More</button>
-    <img id="fb" src="https://res.cloudinary.com/dzmjous4n/image/upload/v1569451943/269328.jpg">
-    <img id="hanes" src="https://res.cloudinary.com/dzmjous4n/image/upload/v1569450369/hanesbrands_logo_030911.jpg" alt="ERROR">
-    </div>
-</body>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row text-center t mb-2">
+                <h1 class="col-sm-12">About Adam Kiser</h1>
+            </div>
+            
+            <div class="row ml-2 custom-control custom-switch">
+                <input type="checkbox" class="col-sm-1 custom-control-input" id="darkSwitch">
+                <label class="col-sm-2 custom-control-label" for="darkSwitch">Dark Mode</label>
+             </div>
+            
+            
+            <div id="carouselExampleSlidesOnly" class="row carousel slide" data-ride="carousel">
+                <div class="col-sm-4 p-4 carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://res.cloudinary.com/dzmjous4n/image/upload/v1569453182/66756326_695406667585068_935746629313495040_n.jpg.jpg" class="d-block w-100" alt="Me">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://res.cloudinary.com/dzmjous4n/image/upload/v1567639362/Pic1.jpg" class="d-block w-100" alt="Also Me">
+                </div>
+                </div>
+                <div class="bg-light p-4 col-sm-4">
+                    <h3>Experience and Goals</h3>
+                    <p class="">My experience with web design includes creating custom pages using html, CSS, and a little javascript.  I enjoy working with CSS and html, however I do hope to learn more about javascript in this course.  I would also like to learn more advanced features for website design.</p>
+                    <h3>Future?</h3>
+                    <p class="">Looking into the future I think I would like to work with a development team to design websites for clients.  I currently work at Hanes Brands Inc. so there could be an opportunity for me to move up and work on our sites within my current workplace.  I enjoy working with html and css, so I know it's something I would enjoy doing as a career. My dream would be to work for the Facebook design team!</p>
+                </div>
+                <div class="col-sm-4 p-4">
+                    <p class="h5 text-center">Hover over the images!</p>
+                    <img class="p-2" data-toggle="popover" title="Hanes" data-content="My current workplace! I love my job!!" src="https://res.cloudinary.com/dzmjous4n/image/upload/v1569450369/hanesbrands_logo_030911.jpg" alt="ERROR">
+                    <img class="p-2" data-toggle="popover" title="Facebook" data-content="I would love to work for a design team in a large company like Facebook!" src="https://res.cloudinary.com/dzmjous4n/image/upload/v1569451943/269328.jpg">
+                </div>
+            </div>
+        
+            
+        </div>
+        
+        
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
 </html>
